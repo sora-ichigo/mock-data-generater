@@ -1,9 +1,24 @@
 {
   "name": "mock-data-generater",
   "version": "0.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/types/index.d.ts",
   "license": "MIT",
+  "scripts": {
+    "build:code": "webpack",
+    "build:type": "tsc",
+    "build": "run-s build:*"
+  },
   "dependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.0",
     "typescript": "^4.8.4"
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.18.6",
+    "npm-run-all": "^4.1.5",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^4.10.0"
   }
 }
