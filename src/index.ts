@@ -1,7 +1,7 @@
 export type User = {
-  id: string
+  id: string;
 };
 
 export const createUser = (): User => {
-  return { id: "1" }
+  return { id: "1" };
 };
